@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(loadProductData())
-  }, []);
+  }, [dispatch]);
 
   let content;
   if (products.length) {
